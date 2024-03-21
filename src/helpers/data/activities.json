@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+   
+      "title": "Football Tournament",
+      "image": "activity-1.jpg"
+    },
+    {
+      "id": 2,
+   
+      "title": "AİD DAY",
+      "image": "2.jpg"
+    },
+    {
+      "id": 3,
+    
+      "title": "Iftar of Ramadan",
+      "image": "3.jpg"
+    },
+    {
+      "id": 4,
+    
+      "title": "history of afar",
+      "image": "4.jpg"
+    },
+    {
+      "id": 5,
+   
+      "title": "Hadith",
+      "image": "5.jpg"
+    },
+    {
+      "id": 6,
+     
+      "title": "Afar traditional dance",
+      "image": "6.jpg"
+    }
+  ]

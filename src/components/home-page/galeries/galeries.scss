@@ -1,0 +1,30 @@
+.gallery {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the gallery horizontally */
+  }
+  
+  .gallery-title {
+    text-align: center; /* Center the gallery title */
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 10px; /* Gap between grid items */
+  }
+  
+  .gallery-item {
+    overflow: hidden; /* Hide overflow to prevent images from overflowing */
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
+  

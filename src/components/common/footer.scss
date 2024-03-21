@@ -1,0 +1,20 @@
+@use "../../styles/variables" as v;
+
+footer{
+    background-color: v.$color1;
+    color: v.$color4;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    .nav-link{
+        color: v.$color4;
+        &:hover{
+            color: v.$color2 !important;
+        }
+        &:active{
+            color: v.$color4;
+        }
+    }
+    h3{
+        color: v.$color2;
+    }
+}
