@@ -6,6 +6,7 @@ import Testimonials from "../components/home-page/testimonials";
 import Teams from "../components/home-page/teams/teams";
 import TeamProfile from "../components/home-page/teams/team-profile";
 import Galeries from "../components/home-page/galeries";
+import WeekMenu from "../components/home-page/week-menu/weekMenu";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,9 @@ const HomePage = () => {
       <Spacer />
       <History />
       <Spacer />
-      <Testimonials/>
+      <WeekMenu />
+      <Spacer />
+      <Testimonials />
       <Spacer />
       <Teams />
       <TeamProfile />

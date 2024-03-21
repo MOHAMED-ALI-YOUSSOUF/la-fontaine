@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "title":"Aid and Thanks: Helping Ethiopia's Displaced Afar People",
+        "image":"1.jpg",
+        "rate":4,
+        "content":"maki"
+        
+    },
+    {
+        "id":2,
+        "title":"Football Tournament in Karabük",
+        "image":"2.jpg",
+        "rate":2,
+        "content":"wizzi"
+    },
+    {
+        "id":3,
+        "title":"Eid Celebration Unites Us from Four Cities",
+        "image":"3.jpg",
+        "rate":3,
+        "content":"said"
+    },
+    {
+        "id":2,
+        "title":"Football Tournament in Karabük",
+        "image":"2.jpg",
+        "rate":4,
+        "content":"ballah"
+    },
+    {
+        "id":3,
+        "title":"Eid Celebration Unites Us from Four Cities",
+        "image":"3.jpg",
+        "rate":5,
+        "content":"yesmo"
+    }
+]

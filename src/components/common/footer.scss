@@ -5,6 +5,12 @@ footer{
     color: v.$color4;
     padding-top: 50px;
     padding-bottom: 10px;
+
+    .social-media{
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
     .nav-link{
         color: v.$color4;
         &:hover{

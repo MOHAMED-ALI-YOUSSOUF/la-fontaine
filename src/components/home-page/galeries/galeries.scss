@@ -1,3 +1,7 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+
 .gallery {
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the gallery horizontally */
@@ -9,6 +13,7 @@
   
   .gallery-container {
     display: grid;
+ 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
     gap: 10px; /* Gap between grid items */
   }
@@ -19,8 +24,9 @@
   
   .gallery-image {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: 250px; /* Maintain aspect ratio */
     display: block;
+    object-fit: cover;
     transition: transform 0.3s ease; /* Add a smooth transition effect */
   }
   
@@ -28,3 +34,4 @@
     transform: scale(1.1); /* Scale up the image on hover */
   }
   
+

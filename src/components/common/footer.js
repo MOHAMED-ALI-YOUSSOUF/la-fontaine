@@ -12,77 +12,80 @@ const Footer = () => {
     <footer>
       <Container>
         <Row className="g-5">
-          <Col lg={3} className=" text-center  ">
-            <Link to="/">
-              <Image
-                src="/images/logo/logo.jpeg"
-                className="img-fluid decoration-none mx-auto d-flex justify-content-center"
-                alt={config.project.name}
-                width={80}
-                roundedCircle
-              />
-            </Link>
-            <p className="mt-3  text-light">{config.project.description}</p>
+          <Col lg={4} className=" text-center  ">
+            <div>
+              <Link to="/">
+                <Image
+                  src="/images/logo/logoresto.png"
+                  className="img-fluid decoration-none mx-auto d-flex justify-content-center"
+                  alt={"la fontaine"}
+                  width={250}
+                  roundedCircle
+                />
+              </Link>
+              <p className="mt-3  text-light">
+               " Savourer l'Éthiopie, bouchée après bouchée! "
+              </p>
+            </div>
+            <Col  className="social-media">
+              <Nav className="">
+                <Nav.Link href="https://www.facebook.com">
+                  <p>Facebook</p>
+                  <CiFacebook /> 
+                </Nav.Link>
+                <Nav.Link href="https://www.whatsapp.com/">
+                  <p>Whatsapp</p>
+                  <BsWhatsapp /> 
+                </Nav.Link>
+                <Nav.Link href="https://www.instagram.com/">
+                  <p>Instagram</p>
+                  <BsInstagram /> 
+                </Nav.Link>
+              </Nav>
+            </Col>
           </Col>
-          <Col md={4} lg={3} className="text-center">
+          <Col md={4} lg={4} className="text-center">
             <h3>Quick Links</h3>
 
             <Nav className="flex-column">
               <Nav.Link as={Link} to="/">
-                Home
+                Accueil
               </Nav.Link>
               <Nav.Link as={Link} to="/about">
-                About
+                Menu
               </Nav.Link>
               <Nav.Link as={Link} to="/projects">
-                Projects
+                Reservation
               </Nav.Link>
               <Nav.Link as={Link} to="/gallery">
-                Gallery
+                Galleries
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">
-                Contact
+                <button className="btn btn-danger">Commande</button>
               </Nav.Link>
             </Nav>
           </Col>
-          <Col md={4} lg={3} className="text-center">
-            <h3>Social Links</h3>
 
-            <Nav className="flex-column">
-              <Nav.Link href={config.contact.socialMedia.facebook}>
-                <CiFacebook /> Facebook
-              </Nav.Link>
-              <Nav.Link href={config.contact.socialMedia.whatsapp}>
-                <BsWhatsapp /> Whatsapp
-              </Nav.Link>
-              <Nav.Link href={config.contact.socialMedia.instagram}>
-                <BsInstagram /> Instagram
-              </Nav.Link>
-              <Nav.Link href={config.contact.socialMedia.twitter}>
-                <FaXTwitter /> Twitter
-              </Nav.Link>
-            </Nav>
-          </Col>
-          <Col md={4} lg={3} className="text-center">
+          <Col md={4} lg={4} className="text-center">
             <h3>Contact</h3>
 
             <Nav className="flex-column">
-              <Nav.Link href={`tel:${config.contact.phone}`}>
-                {config.contact.phone}
+              <Nav.Link href={`tel:+253 77 00 00 00`}>
+                +253 77 00 00 00
               </Nav.Link>
 
-              <Nav.Link href={`mailto:${config.contact.email}`}>
-                {config.contact.email}
+              <Nav.Link href={`mailto:info@lafontaine.com`}>
+                info@lafontaine.com
               </Nav.Link>
               <Nav.Link href={config.contact.mapURL} target="_blank">
-                {config.contact.address}
+                place rainbow, Djibouti
               </Nav.Link>
             </Nav>
           </Col>
         </Row>
 
         <Row className="text-center mt-5 ">
-          <p>© 2023 Afar People Association | All Rights Reserved.</p>
+          <p>© 2024 La Fontaine | All Rights Reserved.</p>
         </Row>
       </Container>
     </footer>
