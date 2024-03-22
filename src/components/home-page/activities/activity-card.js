@@ -1,11 +1,11 @@
 import React from 'react'
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import "./activity-card.scss"
 ;
 
 const ActivityCard = ({title, image}) => {
   return (
-    <div>
+    <Container>
       
       <Card className="activity-card">
       <div className="image">
@@ -23,7 +23,7 @@ const ActivityCard = ({title, image}) => {
       </Card.Title>
     </Card>
       
-    </div>
+    </Container>
   )
 }
 

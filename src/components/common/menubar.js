@@ -58,7 +58,7 @@ const Menubar = () => {
             as={Link}
             to="/"
             title={config.project.name}
-            className={`text-${text}`}
+            className={`text-${text} `}
           >
             <Image
               src={`/images/logo/logoresto.png`}

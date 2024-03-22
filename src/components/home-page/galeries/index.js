@@ -16,35 +16,18 @@ const Galeries = () => {
   ];
 
   return (
-    <Container className="gallery text-center">
+    <div className="bg-light py-5">
+    <Container className="gallery text-center ">
       <h2>Gallery</h2>
-      <div className="gallery-container">
+      <div className="gallery-container ">
         {galleryImages.map((image, index) => (
-          <div key={index} className="gallery-item">
+          <div key={index} className="gallery-item shadow ">
             <img src={image.src} alt={image.alt} className="gallery-image" />
           </div>
         ))}
       </div>
-
-      {/* <Card className="gallery-containere">
-        {galleryImages.map((image, index) => (
-          <React.Fragment key={index}>
-            <div key={index} className="image w-100 h-100">
-              <Card.Img
-                variant="top"
-                src={image.src}
-                alt={image.alt}
-                className="gallery-image img-fluid"
-              />
-            </div>
-            <Card.Title>
-              <h6 className="text-danger">maki</h6>
-              <h2>wizzi</h2>
-            </Card.Title>
-          </React.Fragment>
-        ))}
-      </Card> */}
     </Container>
+    </div>
   );
 };
 

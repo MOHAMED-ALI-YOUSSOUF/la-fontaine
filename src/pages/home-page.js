@@ -23,6 +23,7 @@ const HomePage = () => {
       <TeamProfile />
       <Spacer />
       <Galeries />
+      <Spacer />
     </>
   );
 };

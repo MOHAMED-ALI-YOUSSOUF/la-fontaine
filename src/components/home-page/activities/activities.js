@@ -7,7 +7,7 @@ import activities from "../../../helpers/data/activities.json";
 
 const Activities = () => {
   return (
-    <div className="activities">
+    <Container className="activities">
       <h2 className="text-center text-primary py-5 fs-2">Activities</h2>
       <Container>
         <Row>
@@ -18,7 +18,7 @@ const Activities = () => {
           ))}
         </Row>
       </Container>
-    </div>
+    </Container>
   );
 };
 

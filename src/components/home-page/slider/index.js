@@ -28,7 +28,7 @@ const Slider = () => {
         <Row className=" justify-content-between ">
           {main_menus.map((main_menu, index) => (
             <Col key={index} className="rounded  text-center  ">
-              <button className="btn btn-ligh" >
+              <button className="btn btn-ligh">
                 <Image
                   src={`/images/main-menu/${main_menu.image}`}
                   className="img-fluid"
