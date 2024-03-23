@@ -35,7 +35,7 @@ const Slider = () => {
                   roundedCircle
                   width={100}
                 />
-                <h4 className="text-center text-white">{main_menu.title}</h4>
+                <h4 className="text-center pt-3">{main_menu.title}</h4>
               </button>
             </Col>
           ))}

@@ -30,16 +30,16 @@ const Footer = () => {
             <Col  className="social-media">
               <Nav className="">
                 <Nav.Link href="https://www.facebook.com">
-                  <p>Facebook</p>
-                  <CiFacebook /> 
+                 
+                  <CiFacebook  className="icons"/> 
                 </Nav.Link>
                 <Nav.Link href="https://www.whatsapp.com/">
-                  <p>Whatsapp</p>
-                  <BsWhatsapp /> 
+                  
+                  <BsWhatsapp className="icon"/> 
                 </Nav.Link>
                 <Nav.Link href="https://www.instagram.com/">
-                  <p>Instagram</p>
-                  <BsInstagram /> 
+                 
+                  <BsInstagram className="icon"/> 
                 </Nav.Link>
               </Nav>
             </Col>

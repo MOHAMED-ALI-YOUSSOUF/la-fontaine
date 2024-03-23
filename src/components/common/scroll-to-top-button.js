@@ -32,6 +32,7 @@ const ScrollToTopButton = () => {
   };
 
   return (
+    <>
     <Button
       variant="primary"
       className={`scroll-to-top-button ${isVisible ? 'visible' : 'hidden'}`}
@@ -39,6 +40,7 @@ const ScrollToTopButton = () => {
     >
       <FaArrowUp/>
     </Button>
+    </>
   );
 };
 

@@ -56,7 +56,7 @@ const Galeries = () => {
               className="gallery-item shadow"
               onClick={() => handleImageClick(index)}
             >
-              <Card style={{ width: '200px', height: '200px' }}>
+              <Card style={{  height: '300px' }}>
                 <Card.Img
                   variant="top"
                   src={image.src}

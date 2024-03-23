@@ -4,6 +4,7 @@ import Menubar from "../components/common/menubar";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/common/footer";
 import ScrollToTopButton from "../components/common/scroll-to-top-button";
+import Whatsapp from "../components/common/whatsapp";
 // import ScrollToTopButton from "../components/common/scroll-to-top-button";
 
 const UserLayout = () => {
@@ -20,6 +21,7 @@ const UserLayout = () => {
       <Outlet />
       <Footer />
       <ScrollToTopButton />
+      <Whatsapp />
 
       {/* <ScrollToTopButton/>  */}
     </>

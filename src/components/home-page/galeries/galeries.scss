@@ -37,3 +37,15 @@
   }
   
 
+  @media (max-width: 768px) {
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); /* Deux cartes par ligne sur les écrans jusqu'à 768px */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gallery-container {
+      grid-template-columns: repeat(1, 1fr); /* Une carte par ligne sur les écrans plus petits que 576px */
+    }
+  }
+  

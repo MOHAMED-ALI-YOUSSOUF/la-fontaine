@@ -143,14 +143,14 @@ const Menubar = () => {
                 >
                   <FiHeadphones /> Contact
                 </Nav.Link>
-                <button className="fs-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
+                <button className="fs-5 mx-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
               </Nav>
 
               <Link
                 to="/donate"
                 onClick={closeOffcanvas}
                
-                className={`text-${text} ${orange} btn btn-outline-secondary`}
+                className={`text-${text} ${orange} mx-5 btn btn-outline-secondary`}
               >
                 <FiHeadphones /> COMMANDE 
               </Link>

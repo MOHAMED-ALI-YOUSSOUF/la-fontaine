@@ -71,7 +71,7 @@ const WeekMenu = () => {
           <Slider {...settings}>
             {weekMenus.map((weekMenu) => (
               <div key={weekMenu.id} className="carte">
-                <Card className="shadow ">
+                <Card sm={6} className="shadow ">
                   <Card.Img
                     variant="top"
                     src={`/images/weekMenus/${weekMenu.image}`}
