@@ -3,13 +3,14 @@ import PageHeader from '../components/common/page-header'
 import Spacer from '../components/common/spacer'
 import Gallery from '../components/gallery-page/galleries'
 import ButtonToFacebook from '../components/gallery-page/buuton-to-fb'
+import Reservation from '../components/reservation'
 
-const GalleryPage = () => {
+const ReservationPage = () => {
   return (
     <div>
-      <PageHeader title="Gallery"/>
+      <PageHeader title="reservation"/>
       <Spacer/>
-      <Gallery/>
+      <Reservation/>
       <Spacer/>
       <ButtonToFacebook/>
       <Spacer/>
@@ -20,4 +21,4 @@ const GalleryPage = () => {
   )
 }
 
-export default GalleryPage
+export default ReservationPage

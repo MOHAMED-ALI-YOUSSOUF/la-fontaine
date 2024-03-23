@@ -18,6 +18,7 @@ const History = () => {
               </Col>
               <Col lg={6}>
                 <Card.Body>
+                  <h2>welcome To La-Fontaine</h2>
                   <p className="text-justify">{history.content}</p>
                 </Card.Body>
                 <div className="d-flex justify-content-center"> {/* Added d-flex and justify-content-center */}

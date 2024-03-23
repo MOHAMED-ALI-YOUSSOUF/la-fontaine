@@ -4,9 +4,9 @@ import UserLayout from "../layouts/user-layout";
 import HomePage from "../pages/home-page";
 import AboutPage from "../pages/about-page";
 import ContactPage from "../pages/contact-page";
-import GalleryPage from "../pages/gallery-page";
+import GalleryPage from "../pages/reservation-page";
 import DonatePage from "../pages/donate-page";
-
+import ReservationPage from "../pages/reservation-page";
 
 const router = createBrowserRouter([
   {
@@ -16,30 +16,23 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-
       },
       {
         path: "about",
         element: <AboutPage />,
-        
       },
       {
         path: "gallery",
-        element: <GalleryPage />,
-        
+        element: <ReservationPage />,
       },
       {
         path: "contact",
         element: <ContactPage />,
-        
       },
       {
         path: "donate",
         element: <DonatePage />,
-        
       },
-
-
     ],
   },
 ]);

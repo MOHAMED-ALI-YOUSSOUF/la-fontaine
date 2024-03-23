@@ -4,7 +4,6 @@ import { Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 const Testimonials = () => {
   const testimonials = [
     {
@@ -83,15 +82,22 @@ const Testimonials = () => {
           <Slider {...settings}>
             {testimonials.map((testimonial) => (
               <div key={testimonial.id}>
-                <Card className="m-3 p-1 text-center ">
-                  <Card.Img
-                    variant="top"
-                    src={`/images/testimonial/${testimonial.avatar}`}
-                  />
-                  <Card.Title>{testimonial.name}</Card.Title>
-                  <Card.Body>
+                <Card className="m-3 p-1 text-center bg-primar ">
+                
+                 
+                  <Card.Body className="text-light">
+                    <h6 className="text-start">"</h6>
                     <Card.Text>{testimonial.testimonial}</Card.Text>
-                  </Card.Body>
+                  </Card.Body> 
+                  <div className="avatar">
+                   <Card.Img
+                    src={`/images/testimonial/${testimonial.avatar}`}
+                  /> 
+                  <div>
+                    <Card.Title className="text-light m-2  student">{testimonial.name}</Card.Title>
+                    <p className="small text-warning mx-2">Student</p>
+                  </div>
+                  </div>
                 </Card>
               </div>
             ))}

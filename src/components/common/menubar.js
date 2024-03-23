@@ -8,6 +8,8 @@ import {
   FiAward,
   FiHeadphones,
 } from "react-icons/fi";
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
+
 import { Link } from "react-router-dom";
 import "./menubar.scss";
 
@@ -54,7 +56,13 @@ const Menubar = () => {
         data-bs-theme={mode}
       >
         <Container>
-          <Navbar.Brand
+         
+          <Navbar.Toggle
+            aria-controls={`offcanvasNavbar-expand-lg`}
+            className="bg-light  "
+            onClick={() => setShowOffcanvas(!showOffcanvas)}
+          />
+           <Navbar.Brand
             as={Link}
             to="/"
             title={config.project.name}
@@ -68,11 +76,7 @@ const Menubar = () => {
               roundedCircle
             />{" "}
           </Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls={`offcanvasNavbar-expand-lg`}
-            className="bg-light  "
-            onClick={() => setShowOffcanvas(!showOffcanvas)}
-          />
+<button className="fs-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
@@ -113,7 +117,7 @@ const Menubar = () => {
                   to="/about"
                   onClick={closeOffcanvas}
                 >
-                  <FiAward /> Menu
+                  <FiAward /> About
                 </Nav.Link>
                 <Nav.Link
                   className={`text-${text}`}
@@ -139,6 +143,7 @@ const Menubar = () => {
                 >
                   <FiHeadphones /> Contact
                 </Nav.Link>
+                <button className="fs-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
               </Nav>
 
               <Link
@@ -148,6 +153,14 @@ const Menubar = () => {
                 className={`text-${text} ${orange} btn btn-outline-secondary`}
               >
                 <FiHeadphones /> COMMANDE 
+              </Link>
+              <Link
+                to="/donate"
+                onClick={closeOffcanvas}
+               
+                className={`text-${text}  btn btn-outline-secondary mx-2`}
+              >
+                <PiShoppingCartSimpleBold />  
               </Link>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

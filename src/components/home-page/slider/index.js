@@ -6,7 +6,7 @@ import main_menus from "../../../helpers/data/main_menu.json";
 
 const Slider = () => {
   return (
-    <Container>
+    <>
       <Carousel fade className="slider">
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
@@ -25,7 +25,7 @@ const Slider = () => {
         ))}
       </Carousel>
       <Container className="main-menu">
-        <Row className=" justify-content-between ">
+        <Row className=" justify-content-between  ">
           {main_menus.map((main_menu, index) => (
             <Col key={index} className="rounded  text-center  ">
               <button className="btn btn-ligh">
@@ -35,13 +35,13 @@ const Slider = () => {
                   roundedCircle
                   width={100}
                 />
-                <h4 className="text-center">{main_menu.title}</h4>
+                <h4 className="text-center text-white">{main_menu.title}</h4>
               </button>
             </Col>
           ))}
         </Row>
       </Container>
-    </Container>
+    </>
   );
 };
 
