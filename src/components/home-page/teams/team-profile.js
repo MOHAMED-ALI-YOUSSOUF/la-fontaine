@@ -6,12 +6,12 @@ import "./team-profile.scss"
 
 const TeamProfile = () => {
   return (
-    <Container className="team-profile d-flex justify-content-between align-items-center">
+    <Container className="team-profile ">
 
-    <Row className="g-5 text-center" >
+    <Row className="g-2 text-center d-flex justify-content-between align-items-center" >
   
       {teamData.map((team) => (
-        <Col  sm={4} key={team.id}>
+        <Col  sm={6} md={4} key={team.id}  >
           <TeamProfileCard {...team} />
         </Col>
       ))}

@@ -6,7 +6,7 @@ import main_menus from "../../../helpers/data/main_menu.json";
 
 const Slider = () => {
   return (
-    <>
+    <Container>
       <Carousel fade className="slider">
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
@@ -41,7 +41,7 @@ const Slider = () => {
           ))}
         </Row>
       </Container>
-    </>
+    </Container>
   );
 };
 

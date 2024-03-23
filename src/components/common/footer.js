@@ -10,8 +10,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer>
-      <Container>
-        <Row className="g-5">
+      <Container className="px-4">
+        <Row className="g-5 px-5">
           <Col lg={4} className=" text-center  ">
             <div>
               <Link to="/">

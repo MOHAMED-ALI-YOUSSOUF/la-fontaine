@@ -78,7 +78,7 @@ const Testimonials = () => {
   return (
     <>
       <h1 className="text-center my-4 py-4">What Our Clients Say</h1>
-      <div className="testimonials">
+      <div className="testimonials px-3">
         <Container>
           <Slider {...settings}>
             {testimonials.map((testimonial) => (

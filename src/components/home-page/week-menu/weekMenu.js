@@ -64,9 +64,10 @@ const WeekMenu = () => {
   };
 
   return (
-    <Container>
-      <h1 className="text-center">Spécialités de la semaine</h1>
-      <div className="slider-container">
+    <>
+    <h1 className="text-center">Spécialités de la semaine</h1>
+    <Container >
+      <div className="slider-container px-3">
         <Slider {...settings}>
           {weekMenus.map((weekMenu) => (
             <div key={weekMenu.id} className="carte">
@@ -88,6 +89,7 @@ const WeekMenu = () => {
         </Slider>
       </div>
     </Container>
+    </>
   );
 };
 
