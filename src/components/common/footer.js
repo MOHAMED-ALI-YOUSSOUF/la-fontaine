@@ -5,7 +5,6 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 import { CiFacebook } from "react-icons/ci";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (

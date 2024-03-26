@@ -19,9 +19,9 @@ const UserLayout = () => {
       <Topbar />
       <Menubar />
       <Outlet />
+      <Whatsapp />
       <Footer />
       <ScrollToTopButton />
-      <Whatsapp />
 
       {/* <ScrollToTopButton/>  */}
     </>

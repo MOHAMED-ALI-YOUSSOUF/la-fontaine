@@ -4,8 +4,9 @@ import "./whatsapp.scss"
 const Whatsapp = () => {
   return (
     <div className='whatsapp'>
+      <a href="https://web.whatsapp.com/">
         
-        <BsWhatsapp className="icon"/> 
+        <BsWhatsapp className="icon"/> </a>
     </div>
   )
 }
