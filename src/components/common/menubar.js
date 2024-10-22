@@ -55,13 +55,13 @@ const Menubar = () => {
         sticky="top"
         data-bs-theme={mode}
       >
-        <Container>
+        <Container className="d-flex justify-content-around ">
          
-          <Navbar.Toggle
+          {/* <Navbar.Toggle
             aria-controls={`offcanvasNavbar-expand-lg`}
             className="bg-light  "
             onClick={() => setShowOffcanvas(!showOffcanvas)}
-          />
+          /> */}
            <Navbar.Brand
             as={Link}
             to="/"
@@ -77,7 +77,7 @@ const Menubar = () => {
             />{" "}
           </Navbar.Brand>
 <button className="fs-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
-          <Navbar.Offcanvas
+          {/* <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
             placement="start"
@@ -163,7 +163,7 @@ const Menubar = () => {
                 <PiShoppingCartSimpleBold />  
               </Link>
             </Offcanvas.Body>
-          </Navbar.Offcanvas>
+          </Navbar.Offcanvas> */}
         </Container>
       </Navbar>
       <div className={`nav-bottom  ${orange} `}> </div>

@@ -10,7 +10,7 @@ const AboutPage = () => {
     <>
       <PageHeader title="About" />
       <Spacer />
-      <Welcome />
+      {/* <Welcome /> */}
       <Spacer />
       {/* <Teams/> */}
       {/* <TeamProfile /> */}
