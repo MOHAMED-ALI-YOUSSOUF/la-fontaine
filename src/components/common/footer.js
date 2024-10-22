@@ -28,15 +28,15 @@ const Footer = () => {
             </div>
             <Col  className="social-media">
               <Nav className="">
-                <Nav.Link href="https://www.facebook.com">
+                <Nav.Link href="#">
                  
                   <CiFacebook  className="icons"/> 
                 </Nav.Link>
-                <Nav.Link href="https://www.whatsapp.com/">
+                <Nav.Link href="#">
                   
                   <BsWhatsapp className="icon"/> 
                 </Nav.Link>
-                <Nav.Link href="https://www.instagram.com/">
+                <Nav.Link href="#">
                  
                   <BsInstagram className="icon"/> 
                 </Nav.Link>
@@ -47,19 +47,19 @@ const Footer = () => {
             <h3>Quick Links</h3>
 
             <Nav className="flex-column">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="#">
                 Accueil
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link as={Link} to="#">
                 Menu
               </Nav.Link>
-              <Nav.Link as={Link} to="/projects">
+              <Nav.Link as={Link} to="#">
                 Reservation
               </Nav.Link>
-              <Nav.Link as={Link} to="/gallery">
+              <Nav.Link as={Link} to="#">
                 Galleries
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
+              <Nav.Link as={Link} to="#">
                 <button className="btn btn-danger">Commande</button>
               </Nav.Link>
             </Nav>
@@ -69,14 +69,14 @@ const Footer = () => {
             <h3>Contact</h3>
 
             <Nav className="flex-column">
-              <Nav.Link href={`tel:+253 77 00 00 00`}>
+              <Nav.Link href="#">
                 +253 77 00 00 00
               </Nav.Link>
 
-              <Nav.Link href={`mailto:info@lafontaine.com`}>
+              <Nav.Link href="#">
                 info@lafontaine.com
               </Nav.Link>
-              <Nav.Link href={config.contact.mapURL} target="_blank">
+              <Nav.Link href="#" >
                 place rainbow, Djibouti
               </Nav.Link>
             </Nav>
