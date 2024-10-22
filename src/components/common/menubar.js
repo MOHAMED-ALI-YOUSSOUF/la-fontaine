@@ -55,13 +55,13 @@ const Menubar = () => {
         sticky="top"
         data-bs-theme={mode}
       >
-        <Container className="d-flex justify-content-around ">
+        <Container >
          
-          {/* <Navbar.Toggle
+          <Navbar.Toggle
             aria-controls={`offcanvasNavbar-expand-lg`}
             className="bg-light  "
             onClick={() => setShowOffcanvas(!showOffcanvas)}
-          /> */}
+          />
            <Navbar.Brand
             as={Link}
             to="/"
@@ -77,7 +77,7 @@ const Menubar = () => {
             />{" "}
           </Navbar.Brand>
 <button className="fs-5 btn btn-outline-danger d-lg-none"><PiShoppingCartSimpleBold /></button>
-          {/* <Navbar.Offcanvas
+          <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
             placement="start"
@@ -114,7 +114,7 @@ const Menubar = () => {
                 <Nav.Link
                   className={`text-${text}`}
                   as={Link}
-                  to="/about"
+                  to="#"
                   onClick={closeOffcanvas}
                 >
                   <FiAward /> About
@@ -122,7 +122,7 @@ const Menubar = () => {
                 <Nav.Link
                   className={`text-${text}`}
                   as={Link}
-                  to="/projects"
+                  to="#"
                   onClick={closeOffcanvas}
                 >
                   <FiAperture /> Reservation
@@ -130,7 +130,7 @@ const Menubar = () => {
                 <Nav.Link
                   className={`text-${text}`}
                   as={Link}
-                  to="/gallery"
+                  to="#"
                   onClick={closeOffcanvas}
                 >
                   <FiCalendar /> Gallerie
@@ -138,7 +138,7 @@ const Menubar = () => {
                 <Nav.Link
                   className={`text-${text}`}
                   as={Link}
-                  to="/contact"
+                  to="#"
                   onClick={closeOffcanvas}
                 >
                   <FiHeadphones /> Contact
@@ -147,7 +147,7 @@ const Menubar = () => {
               </Nav>
 
               <Link
-                to="/donate"
+                to="#"
                 onClick={closeOffcanvas}
                
                 className={`text-${text} ${orange} mx-5 btn btn-outline-secondary`}
@@ -155,7 +155,7 @@ const Menubar = () => {
                 <FiHeadphones /> COMMANDE 
               </Link>
               <Link
-                to="/donate"
+                to="#"
                 onClick={closeOffcanvas}
                
                 className={`text-${text}  btn btn-outline-secondary mx-2`}
@@ -163,13 +163,13 @@ const Menubar = () => {
                 <PiShoppingCartSimpleBold />  
               </Link>
             </Offcanvas.Body>
-          </Navbar.Offcanvas> */}
+          </Navbar.Offcanvas>
         </Container>
       </Navbar>
       <div className={`nav-bottom  ${orange} `}> </div>
       <Container className="text-center mt-3">
         <Link
-          to="/donate"
+          to="#"
           className={`btn btn-outline-secondary ${orange}`}
         >
           <FiHeadphones /> COMMANDE
